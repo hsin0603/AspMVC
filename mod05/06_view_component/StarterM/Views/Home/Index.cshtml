@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home</h1>
+
+    @*<partial name="_CommentList" />*@
+
+    @await Component.InvokeAsync("CommentList")
+
+    <vc:comment-list></vc:comment-list>
+</body>
+</html>

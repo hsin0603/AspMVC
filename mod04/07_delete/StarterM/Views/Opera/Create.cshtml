@@ -1,0 +1,41 @@
+﻿@model Opera
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <link href="~/site.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Create</h1>
+    <form asp-action="create">
+        <div asp-validation-summary="All"></div>
+        <div>
+            <label asp-for="Title"></label>
+            <input asp-for="Title" />
+            <span asp-validation-for="Title">*</span>
+        </div>
+        <div>
+            <label asp-for="Year"></label>
+            <input asp-for="Year" />
+            <span asp-validation-for="Year">*</span>
+        </div>
+        <div>
+            <label asp-for="Composer"></label>
+            <input asp-for="Composer" />
+            <span asp-validation-for="Composer">*</span>
+        </div>
+        <input type="submit" value="Save" />
+    </form>
+    <a asp-action="Index">Back to List</a>
+
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <style>
+        ul#menu > li {
+            border: 1px solid;
+            padding: 10px;
+            display: inline;
+        }
+    </style>
+    <link href="~/site.css" rel="stylesheet" />
+</head>
+<body>
+    <ul id="menu">
+        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+        <li><a asp-controller="Opera" asp-action="Index">Opera List</a></li>
+        <li><a asp-controller="Opera" asp-action="Create">Opera Create</a></li>
+    </ul>
+
+    <div style="border:3px dotted red;">
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/jquery/jquery.js"></script>
+
+    @RenderSection("scripts",false)
+</body>
+</html>

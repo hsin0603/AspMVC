@@ -1,0 +1,21 @@
+﻿@model StarterM.Models.Opera
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home</h1>
+
+    <form action="~/opera">
+        @Html.EditorForModel()
+        <input type="submit" />
+    </form>
+</body>
+</html>

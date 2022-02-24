@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+@{
+    int m = 10;
+}
+m
+@m
+@m+50
+@(m+50)
+<hr />
+@{
+    // string s = "<h1>Hello</h1>"; //1. c# code
+    string s = "<script>alert(1);</script>";
+    <h2>@s</h2> //2. HTML Tag
+    @:3. Text...
+}
+<hr />
+@s
+@*@Html.Raw(s)*@
+
+<hr />
+@{
+    if (DateTime.Now.Hour > 12)
+    {
+        @:午安
+    }
+    else
+    {
+        @:早安
+    }
+}
+@if (DateTime.Now.Hour > 12)
+{
+    @:午安
+}
+else
+{
+    @:早安
+}

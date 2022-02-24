@@ -1,0 +1,21 @@
+﻿@model IEnumerable<StarterM.Models.Comment>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetComments</title>
+</head>
+<body>
+    <h1>GetComments</h1>
+
+   @await Html.PartialAsync("_CommentList")
+    <hr />
+    <partial name="_CommentList" />
+</body>
+</html>

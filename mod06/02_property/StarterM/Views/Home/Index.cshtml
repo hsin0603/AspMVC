@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home</h1>
+    
+    <a href="?id=3000">Get</a>
+  
+    <form action="~/Home/Index/100?id=200" method="post">
+        Id: <input type="text" name="id" value="300"/>
+        <input type="submit" />
+    </form>
+    Result: @ViewBag.result
+</body>
+</html>

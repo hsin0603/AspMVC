@@ -1,0 +1,21 @@
+﻿@model StarterM.Models.Opera
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <ul>
+        <li>@Html.DisplayName("OperaID"): @Html.Display("OperaID")</li>
+        <li>@Html.DisplayNameFor(o => o.Title): @Html.DisplayFor(o => o.Title)</li>
+        <li>@Html.DisplayNameFor(o => o.Year): @Html.DisplayFor(o => o.Year)</li>
+        <li>@Html.DisplayNameFor(o => o.Composer): @Html.DisplayFor(o => o.Composer)</li>
+    </ul>
+</body>
+</html>

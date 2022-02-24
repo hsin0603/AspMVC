@@ -1,0 +1,45 @@
+﻿@model IEnumerable<StarterM.Models.Opera>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>Opera List</h1>
+
+    <a asp-action="Create">Create</a>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(m => m.OperaID)</th>
+                <th>@Html.DisplayNameFor(m => m.Title)</th>
+                <th>@Html.DisplayNameFor(m => m.Year)</th>
+                <th>@Html.DisplayNameFor(m => m.Composer)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(m => item.OperaID)</td>
+                    <td>@Html.DisplayFor(m => item.Title)</td>
+                    <td>@Html.DisplayFor(m => item.Year)</td>
+                    <td>@Html.DisplayFor(m => item.Composer)</td>
+                    <td>
+                        <a asp-action="details" asp-route-id="@item.OperaID">Details</a>
+                        <a asp-action="edit" asp-route-id="@item.OperaID">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

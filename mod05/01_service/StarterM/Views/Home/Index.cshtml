@@ -1,0 +1,18 @@
+﻿@using StarterM.Services
+@inject IFormatNumber f
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home</h1>
+    @f.GetFormattedNumber(1234.5678)
+</body>
+</html>

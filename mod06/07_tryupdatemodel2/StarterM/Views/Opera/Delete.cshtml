@@ -1,0 +1,34 @@
+﻿@model Opera 
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete Confirm</title>
+</head>
+<body>
+    <h1>Delete Confirm</h1>
+    <ul>
+        <li>
+            @Html.DisplayNameFor(m => m.Title) :
+            @Html.DisplayFor(m => m.Title)
+        </li>
+        <li>
+            @Html.DisplayNameFor(m => m.Year) :
+            @Html.DisplayFor(m => m.Year)
+        </li>
+        <li>
+            @Html.DisplayNameFor(m => m.Composer) :
+            @Html.DisplayFor(m => m.Composer)
+        </li>
+    </ul>
+    <form asp-action="delete">
+        <input type="submit" value="Delete"/>
+    </form>
+    <a asp-action="Index">Back to List</a>
+</body>
+</html>

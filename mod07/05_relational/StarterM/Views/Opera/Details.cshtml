@@ -1,0 +1,40 @@
+﻿@model Opera 
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <h1>Details</h1>
+    <h2>Comments</h2>
+    <ul>
+        @foreach (var item in Model.Comments)
+        {
+            <li>@item.UserName: @item.UserComment</li>
+        }
+    </ul>
+    <hr />
+    <ul>
+        <li>
+            @Html.DisplayNameFor(m => m.Title) :
+            @Html.DisplayFor(m => m.Title)
+        </li>
+        <li>
+            @Html.DisplayNameFor(m => m.Year) :
+            @Html.DisplayFor(m => m.Year)
+        </li>
+        <li>
+            @Html.DisplayNameFor(m => m.Composer) :
+            @Html.DisplayFor(m => m.Composer)
+        </li>
+    </ul>
+ 
+    <a asp-action="Index">Back to List</a>
+</body>
+</html>

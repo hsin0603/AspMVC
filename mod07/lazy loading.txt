@@ -1,0 +1,12 @@
+1.
+nuget  Microsoft.EntityFrameworkCore.Proxies  v5.0.14
+
+2.
+navigation property->virtual
+
+3.
+startup.cs
+     services.AddDbContext<OperaContext>(options => 
+                options.UseSqlServer(Configuration.GetConnectionString("default"))
+                    .UseLazyLoadingProxies()
+                    );

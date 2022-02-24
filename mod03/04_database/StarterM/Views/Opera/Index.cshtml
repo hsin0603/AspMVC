@@ -1,0 +1,37 @@
+﻿@model IEnumerable<StarterM.Models.Opera>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>Opera List</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>@Html.DisplayNameFor(m => m.OperaID)</td>
+                <td>@Html.DisplayNameFor(m => m.Title)</td>
+                <td>@Html.DisplayNameFor(m => m.Year)</td>
+                <td>@Html.DisplayNameFor(m => m.Composer)</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@Html.DisplayFor(m => item.OperaID)</td>
+                <td>@Html.DisplayFor(m => item.Title)</td>
+                <td>@Html.DisplayFor(m => item.Year)</td>
+                <td>@Html.DisplayFor(m => item.Composer)</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

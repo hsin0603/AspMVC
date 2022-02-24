@@ -1,0 +1,25 @@
+﻿@model DateTime
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+</head>
+<body>
+    <h1>@ViewData["title"]</h1>
+    <h2>@ViewBag.title</h2>
+
+    <ul>
+        <li>date1: @ViewData["date1"]</li>
+        <li>date2: @ViewBag.date2</li>
+        <li>date1: @(((DateTime)ViewData["date1"]).ToShortDateString())</li>
+        <li>date2: @ViewBag.date2.ToShortDateString()</li>
+        <li>Model: @Model.ToShortDateString()</li>
+    </ul>
+</body>
+</html>

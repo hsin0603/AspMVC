@@ -1,0 +1,32 @@
+﻿@model Opera
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <h1>Create</h1>
+    <form asp-action="create">
+        <div>
+            <label asp-for="Title"></label>
+            <input asp-for="Title" />
+        </div>
+        <div>
+            <label asp-for="Year"></label>
+            <input asp-for="Year" />
+        </div>
+        <div>
+            <label asp-for="Composer"></label>
+            <input asp-for="Composer" />
+        </div>
+        <input type="submit" value="Save" />
+    </form>
+    <a asp-action="Index">Back to List</a>
+</body>
+</html>

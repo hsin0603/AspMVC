@@ -1,0 +1,6 @@
+  modelBuilder.Entity<Comment>().HasData(
+    new Comment { CommentId = 1 , OperaID = 1 , UserName = "user1" , UserComment = "comment1" , LastModified = DateTime.Now } ,
+    new Comment { CommentId = 2 , OperaID = 1 , UserName = "user2" , UserComment = "comment2" , LastModified = DateTime.Now } ,
+    new Comment { CommentId = 3 , OperaID = 2 , UserName = "user3" , UserComment = "comment3" , LastModified = DateTime.Now } ,
+    new Comment { CommentId = 4 , OperaID = 2 , UserName = "user4" , UserComment = "comment4" , LastModified = DateTime.Now }
+    );
