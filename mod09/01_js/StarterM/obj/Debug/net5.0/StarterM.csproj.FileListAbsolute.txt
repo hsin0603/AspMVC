@@ -1760,3 +1760,5 @@ C:\public\mod09\01_js\StarterM\obj\Debug\net5.0\StarterM.dll
 C:\public\mod09\01_js\StarterM\obj\Debug\net5.0\ref\StarterM.dll
 C:\public\mod09\01_js\StarterM\obj\Debug\net5.0\StarterM.pdb
 C:\public\mod09\01_js\StarterM\obj\Debug\net5.0\StarterM.genruntimeconfig.cache
+C:\public\mod09\01_js\StarterM\obj\Debug\net5.0\Razor\Views\Home\CSSDemo.cshtml.g.cs
+C:\public\mod09\01_js\StarterM\obj\Debug\net5.0\Razor\Views\Home\AjaxDemo.cshtml.g.cs

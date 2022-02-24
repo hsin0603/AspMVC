@@ -7153,11 +7153,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Public\\Mod9\\js\\StarterM\\StarterM.csproj",
+      "projectUniqueName": "C:\\Public\\MVC\\mod09\\js\\StarterM\\StarterM.csproj",
       "projectName": "StarterM",
-      "projectPath": "C:\\Public\\Mod9\\js\\StarterM\\StarterM.csproj",
+      "projectPath": "C:\\Public\\MVC\\mod09\\js\\StarterM\\StarterM.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Public\\Mod9\\js\\StarterM\\obj\\",
+      "outputPath": "C:\\Public\\MVC\\mod09\\js\\StarterM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
