@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Home</h1>
+
+Name :
+<input type="text" id="username" />
+<input type="button" value="Button" id="button1" />
+<div id="result"></div>
+
+@section scripts{
+<script>
+    $(() => {
+        //document.getElementById("button1").onclick = () => {
+        //    // alert(1)
+        //    document.getElementById("result").textContent =
+        //        `Hi ${document.getElementById("username").value}`;
+        //};
+        $("#button1").click(() => {
+            $("#result").text(
+                `Hi ${$("#username").val()}`
+            );
+        });
+    });
+    
+</script>
+
+}

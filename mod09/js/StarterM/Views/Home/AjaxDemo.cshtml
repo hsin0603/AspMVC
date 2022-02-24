@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "AjaxDemo";
+}
+
+<h1>AjaxDemo</h1>
+
+<form id="form1">
+    Book ID : <input type="text" name="id" />
+    <input type="button" value="Button" id="button1" />
+</form>
+
+<div id="result"></div>
+
+@section scripts{
+    <script>
+        $(() => {
+            $("#button1").click(() => {
+                //alert($("#form1").serialize())
+
+                $.ajax({
+                    url: "@Url.Action("GetBook")",
+                    data: $("#form1").serialize()
+                })
+                    .done(result => {
+                        console.log(result);
+                        $("#result").text(`Title:${result.title}`)
+                    })
+                    .fail(result => {
+                        $("#result").text(`Error:${result.statusText}`)
+                    });
+            });
+        });
+    </script>
+
+}

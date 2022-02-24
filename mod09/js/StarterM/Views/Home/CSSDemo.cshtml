@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "CSSDemo";
+}
+
+
+
+<div id="div1">
+    <h1> Database </h1>
+    <div class="myclass">
+        SQL
+    </div>
+    <h1> Programming </h1>
+    <div class="myclass">
+        ASP.NET MVC
+    </div>
+    <h1> Management </h1>
+    <div class="myclass">
+        PMP
+    </div>
+</div>
+@section styles
+{
+    <link href="~/lib/jqueryui/jquery-ui.css" rel="stylesheet" />
+}
+@section scripts{
+    <script src="~/lib/jqueryui/jquery-ui.js"></script>
+    <script>
+        $(() => {
+            $("#div1").accordion();
+            //$("h1").css("color", "red");
+            //$(".myclass").css({
+            //    color: "blue",
+            //    fontSize: 30
+            //    //"font-size":32
+            //});
+        });
+    </script>
+
+}
